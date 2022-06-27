@@ -2,10 +2,24 @@
   <div id="mydivSidebarheader" style="float: left">
     Click to move
     <div class="">
-      <p-button (click)="op.toggle($event)">Announcement</p-button>
+      <button
+        pButton
+        type="button"
+        icon="pi pi-bell"
+        class="p-button-rounded p-button-warning"
+        (click)="op.toggle($event)"
+      ></button>
     </div>
     <br />
-    <div><p-button (click)="op1.toggle($event)">Notification</p-button></div>
+    <!-- <div>
+      <button
+        pButton
+        type="button"
+        icon="pi pi-bell"
+        class="p-button-rounded p-button-warning"
+        (click)="op1.toggle($event)"
+      ></button>
+    </div> -->
 
     <p-overlayPanel #op [showCloseIcon]="true" [style]="{ width: '450px' }">
       <app-announcement></app-announcement> </p-overlayPanel
