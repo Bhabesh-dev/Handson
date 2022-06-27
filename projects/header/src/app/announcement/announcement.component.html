@@ -1,0 +1,7 @@
+<div class="homepage-container" *ngIf="announcement">
+  <div class="announcement-bar">
+    <div *ngFor="let item of announcement">
+      <p>{{ item.message }}</p>
+    </div>
+  </div>
+</div>
